@@ -1,0 +1,15 @@
+{
+    "name": "govspark-connect",
+    "version": "1.0.0",
+    "description": "GovSpark Connect - Full Stack Platform",
+    "scripts": {
+        "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+        "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+        "build": "cd client && npm run build && cd ../server && npm run build"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.0"
+    },
+    "author": "Antigravity",
+    "license": "ISC"
+}
